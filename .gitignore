@@ -1,5 +1,9 @@
 /target
 
 /pixi/project
+/pixi/target
+
+/project/target
+/project/project
 
 .idea
