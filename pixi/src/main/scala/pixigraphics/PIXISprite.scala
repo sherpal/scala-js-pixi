@@ -9,16 +9,13 @@ import scala.scalajs.js.|
  */
 @js.native
 @JSGlobal("PIXI.Sprite")
-class PIXISprite(var texture: PIXITexture) extends PIXIContainer with WithTint{
+class PIXISprite(var texture: PIXITexture) extends PIXIContainer with WithTint {
 
   var anchor: PIXIObservablePoint = js.native
 
   var blendMode: Int = js.native
 
   var mask: PIXISprite | PIXIGraphics = js.native
-
-  //var tint: Int = js.native
-
 
 }
 
