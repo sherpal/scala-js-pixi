@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.JSGlobal
 @JSGlobal("PIXI.ObservablePoint")
 class PIXIObservablePoint(cb: js.Function, scope: js.Object, var x: Double = 0, var y: Double = 0) extends js.Object {
 
-  def set(x: Double, y: Double): Unit = js.native
+  def set(x: Double, y: Double = x): Unit = js.native
 
 }

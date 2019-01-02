@@ -19,4 +19,6 @@ final class PIXIApplication(options: PIXIApplicationOptions) extends js.Object {
 
   val view: html.Canvas = js.native
 
+  def destroy(removeView: Boolean = false): Unit = js.native
+
 }

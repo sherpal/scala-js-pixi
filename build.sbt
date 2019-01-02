@@ -13,3 +13,10 @@ lazy val `pixi-facade` = project.in(file("pixi"))
     "org.scala-js" %%% "scalajs-dom" % "0.9.6"
   )
 )
+
+lazy val `examples` = project.in(file("pixi-examples/scala-project"))
+.enablePlugins(ScalaJSPlugin)
+.dependsOn(`pixi-facade`)
+.settings(
+  scalaJSUseMainModuleInitializer := true
+)

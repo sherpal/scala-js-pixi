@@ -3,6 +3,10 @@
 /pixi/project
 /pixi/target
 
+/pixi-examples/scala-project/project
+/pixi-examples/scala-project/target
+/pixi-examples/html/required
+
 /project/target
 /project/project
 
