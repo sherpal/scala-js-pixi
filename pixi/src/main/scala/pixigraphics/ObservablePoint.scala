@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.JSGlobal
  */
 @js.native
 @JSGlobal("PIXI.ObservablePoint")
-final class PIXIObservablePoint(
+final class ObservablePoint(
                                  cb: js.Function,
                                  scope: js.Object,
                                  var x: Double = 0,

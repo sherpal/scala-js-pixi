@@ -1,7 +1,7 @@
 package basics
 
 import pixi.PIXIExample
-import pixigraphics.{PIXI, PIXIApplication, PIXIApplicationOptions, PIXISprite}
+import pixigraphics.{PIXI, Application, ApplicationOptions, Sprite}
 
 import scala.scalajs.js
 
@@ -11,16 +11,16 @@ object Click extends PIXIExample {
 
   val pixiUrl: String = "https://pixijs.io/examples/#/basics/click.js"
 
-  def newApplication(): PIXIApplication = {
+  def newApplication(): Application = {
 
-    val app = new PIXIApplication(new PIXIApplicationOptions {
+    val app = new Application(new ApplicationOptions {
       override val backgroundColor: js.UndefOr[Int] = 0x1099bb
     })
 
     // Scale mode for all textures, will retain pixelation
-    PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST.asInstanceOf[Int]
+    PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST
 
-    val sprite = PIXISprite.fromImage("required/assets/basics/bunny.png")
+    val sprite = Sprite.fromImage("required/assets/basics/bunny.png")
 
     // Set the initial position
     sprite.anchor.set(0.5)

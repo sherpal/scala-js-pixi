@@ -8,7 +8,7 @@ for
 Pixi is an awesome framework for 2D rendering on canvas, using either webgl
 or canvas-2d rendering.
 
-This facade allow you to use Pixi from Scala
+This facade allows you to use Pixi from Scala
 with Scala-js.
 
 The facade is far from complete. However, adding
@@ -50,7 +50,8 @@ the lines:
 - removing the semi-colon at end of lines
 - changing `for` loops into for comprehensions
 
-Adding the canvas is made automatically in
+Adding the canvas to the DOM is made automatically
+in
 `PIXIExample`.
 
 ## Random thoughts

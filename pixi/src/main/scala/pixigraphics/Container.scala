@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.JSGlobal
  */
 @js.native
 @JSGlobal("PIXI.Container")
-class PIXIContainer extends DisplayObject {
+class Container extends DisplayObject {
 
   def children: js.Array[DisplayObject] = js.native
 
@@ -16,7 +16,7 @@ class PIXIContainer extends DisplayObject {
 
   var interactiveChildren: Boolean = js.native
 
-  val scale: PIXIPoint = js.native
+  val scale: Point = js.native
 
   var width: Double = js.native
 

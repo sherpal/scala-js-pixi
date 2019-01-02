@@ -1,7 +1,7 @@
 package basics
 
 import pixi.PIXIExample
-import pixigraphics.{PIXIApplication, PIXIApplicationOptions, PIXISprite}
+import pixigraphics.{Application, ApplicationOptions, Sprite}
 
 import scala.scalajs.js
 
@@ -11,13 +11,13 @@ object Basics extends PIXIExample {
 
   val pixiUrl: String = "https://pixijs.io/examples/#/basics/basic.js"
 
-  def newApplication(): PIXIApplication = {
-    val app = new PIXIApplication(new PIXIApplicationOptions {
+  def newApplication(): Application = {
+    val app = new Application(new ApplicationOptions {
       override val backgroundColor: js.UndefOr[Int] = 0x1099bb
     })
 
     // create a new Sprite from an image path
-    val bunny = PIXISprite.fromImage("required/assets/basics/bunny.png")
+    val bunny = Sprite.fromImage("required/assets/basics/bunny.png")
 
     // center the sprite's anchor point
     bunny.anchor.set(0.5)

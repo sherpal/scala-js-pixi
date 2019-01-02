@@ -2,7 +2,7 @@ package basics
 
 import pixi.PIXIExample
 import pixigraphics.extras.{TilingSprite => TilingSpriteClass}
-import pixigraphics.{PIXIApplication, PIXIApplicationOptions, PIXITexture}
+import pixigraphics.{Application, ApplicationOptions, Texture}
 
 object TilingSprite extends PIXIExample {
 
@@ -10,12 +10,12 @@ object TilingSprite extends PIXIExample {
 
   val pixiUrl: String = "https://pixijs.io/examples/#/basics/tiling-sprite.js"
 
-  def newApplication(): PIXIApplication = {
+  def newApplication(): Application = {
 
-    val app = new PIXIApplication(new PIXIApplicationOptions {})
+    val app = new Application(new ApplicationOptions {})
 
     // create a texture from an image path
-    val texture = PIXITexture.fromImage("required/assets/p2.jpeg")
+    val texture = Texture.fromImage("required/assets/p2.jpeg")
 
     /* create a tiling sprite ...
      * requires a texture, a width and a height

@@ -8,7 +8,7 @@ import scala.scalajs.js
  * Common features of WebGLRenderer ans CanvasRenderer.
  */
 @js.native
-trait PIXIRenderer extends js.Object {
+trait Renderer extends js.Object {
 
   val view: html.Canvas = js.native
 
@@ -17,9 +17,9 @@ trait PIXIRenderer extends js.Object {
   // example: renderer.backgroundColor = 0xFF0000
   var backgroundColor: Int = js.native
 
-  def generateTexture(displayObject: DisplayObject): PIXITexture = js.native
+  def generateTexture(displayObject: DisplayObject): Texture = js.native
 
-  def render(stage: DisplayObject): Unit = js.native
+  def render(stage: DisplayObject, renderTexture: RenderTexture): Unit = js.native
 
   // example:
   //     renderer.autoResize = true

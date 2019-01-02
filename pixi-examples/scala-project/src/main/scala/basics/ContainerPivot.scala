@@ -11,21 +11,21 @@ object ContainerPivot extends PIXIExample {
 
   val pixiUrl: String = "https://pixijs.io/examples/#/basics/container-pivot.js"
 
-  def newApplication(): PIXIApplication = {
-    val app = new PIXIApplication(new PIXIApplicationOptions {
+  def newApplication(): Application = {
+    val app = new Application(new ApplicationOptions {
       override val backgroundColor: js.UndefOr[Int] = 0x1099bb
     })
 
-    val container = new PIXIContainer()
+    val container = new Container()
 
     app.stage.addChild(container)
 
     // Create a new texture
-    val texture = PIXITexture.fromImage("required/assets/basics/bunny.png")
+    val texture = Texture.fromImage("required/assets/basics/bunny.png")
 
     // Create a 5x5 grid of bunnies
     for (i <- 0 until 25) {
-      val bunny = new PIXISprite(texture)
+      val bunny = new Sprite(texture)
       bunny.anchor.set(0.5)
       bunny.x = (i % 5) * 40
       bunny.y = Math.floor(i / 5) * 40

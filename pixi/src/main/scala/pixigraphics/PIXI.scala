@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.JSGlobal
 @JSGlobal("PIXI")
 object PIXI extends js.Object {
 
-  val loader: PIXILoader = js.native
+  val loader: Loader = js.native
 
-  val SCALE_MODES: js.Dynamic = js.native
+  val SCALE_MODES: ScaleModeChoices = js.native
 
   val BLEND_MODES: BlendModeChoices = js.native
 

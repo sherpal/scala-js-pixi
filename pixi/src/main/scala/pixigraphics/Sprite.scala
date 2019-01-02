@@ -9,21 +9,21 @@ import scala.scalajs.js.|
  */
 @js.native
 @JSGlobal("PIXI.Sprite")
-class PIXISprite(var texture: PIXITexture) extends PIXIContainer with WithTint {
+class Sprite(var texture: Texture) extends Container with WithTint {
 
-  var anchor: PIXIObservablePoint = js.native
+  var anchor: ObservablePoint = js.native
 
   var blendMode: Int = js.native
 
-  var mask: PIXISprite | PIXIGraphics = js.native
+  var mask: Sprite | Graphics = js.native
 
 }
 
 
 @js.native
 @JSGlobal("PIXI.Sprite")
-object PIXISprite extends js.Object {
+object Sprite extends js.Object {
 
-  def fromImage(imageId: String): PIXISprite = js.native
+  def fromImage(imageId: String): Sprite = js.native
 
 }

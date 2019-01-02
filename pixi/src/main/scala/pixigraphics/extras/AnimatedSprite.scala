@@ -1,6 +1,6 @@
 package pixigraphics.extras
 
-import pixigraphics.{PIXISprite, PIXITexture}
+import pixigraphics.{Sprite, Texture}
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSGlobal
@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.JSGlobal
 @js.native
 @JSGlobal("PIXI.extras.AnimatedSprite")
 final class AnimatedSprite(
-                      val textures: js.Array[PIXITexture],
-                      autoUpdate: Boolean = true
-                    ) extends PIXISprite(js.native) {
+                            val textures: js.Array[Texture],
+                            autoUpdate: Boolean = true
+                    ) extends Sprite(js.native) {
 
   var animationSpeed: Double = js.native
 

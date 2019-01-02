@@ -16,15 +16,15 @@ abstract class DisplayObject extends EventEmitter {
 
   var dirty: Boolean = js.native
 
-  var filters: js.Array[PIXIFilter] = js.native
+  var filters: js.Array[Filter] = js.native
 
   var interactive: Boolean = js.native
 
-  val parent: PIXIContainer = js.native
+  val parent: Container = js.native
 
-  val pivot: PIXIPoint = js.native
+  val pivot: Point = js.native
 
-  val position: PIXIPoint = js.native
+  val position: Point = js.native
 
   var rotation: Double = js.native
 

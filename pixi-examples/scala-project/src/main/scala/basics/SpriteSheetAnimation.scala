@@ -13,19 +13,19 @@ object SpriteSheetAnimation extends PIXIExample {
 
   val pixiUrl: String = "https://pixijs.io/examples/#/basics/spritesheet.js"
 
-  def newApplication(): PIXIApplication = {
-    val app = new PIXIApplication(new PIXIApplicationOptions {})
+  def newApplication(): Application = {
+    val app = new Application(new ApplicationOptions {})
 
     PIXI.loader
       .add("required/assets/basics/fighter.json")
       .load(onAssetsLoaded)
 
-    def onAssetsLoaded(loader: PIXILoader, dictionary: Dictionary[PIXIResource]): Unit = {
+    def onAssetsLoaded(loader: Loader, dictionary: Dictionary[Resource]): Unit = {
       // create an array of textures from an image path
       val frames = for (i <- 0 until 30) yield {
         val value = (if (i < 10) "0" else "") + i
         // magically works since the spritesheet was loaded with the pixi loader
-        PIXITexture.fromFrame("rollSequence00" + value + ".png")
+        Texture.fromFrame("rollSequence00" + value + ".png")
       }
 
 

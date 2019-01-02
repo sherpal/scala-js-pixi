@@ -1,7 +1,7 @@
 package pixi
 
 import basics._
-import pixigraphics.PIXIApplication
+import pixigraphics.Application
 
 trait PIXIExample {
 
@@ -9,7 +9,7 @@ trait PIXIExample {
 
   val pixiUrl: String
 
-  private var pixiApp: Option[PIXIApplication] = None
+  private var pixiApp: Option[Application] = None
 
   private def stop(): Unit = {
     pixiApp match {
@@ -20,7 +20,7 @@ trait PIXIExample {
     pixiApp = None
   }
 
-  protected def newApplication(): PIXIApplication
+  protected def newApplication(): Application
 
   def run(): Unit = {
     PIXIExample.stopAll()
@@ -38,7 +38,11 @@ object PIXIExample {
     ContainerPivot,
     SpriteSheetAnimation,
     Click,
-    TilingSprite
+    TilingSprite,
+    Text,
+    Graphics,
+    Video,
+    RenderTexture
   )
 
   def stopAll(): Unit =

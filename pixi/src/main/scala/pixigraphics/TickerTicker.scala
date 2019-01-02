@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.JSGlobal
   */
 @JSGlobal("PIXI.ticker.Ticker")
 @js.native
-final class PIXITickerTicker() extends js.Object {
+final class TickerTicker() extends js.Object {
 
   def add(fn: js.Function): Unit = js.native
 

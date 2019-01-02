@@ -1,6 +1,6 @@
 package pixigraphics.extras
 
-import pixigraphics.{PIXIObservablePoint, PIXISprite, PIXITexture}
+import pixigraphics.{ObservablePoint, Sprite, Texture}
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSGlobal
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.JSGlobal
 @js.native
 @JSGlobal("PIXI.extras.TilingSprite")
 final class TilingSprite(
-                          texture: PIXITexture,
+                          texture: Texture,
                           width: Double = 100,
                           height: Double = 100
-                        ) extends PIXISprite(js.native) {
+                        ) extends Sprite(js.native) {
 
-  val tilePosition: PIXIObservablePoint = js.native
+  val tilePosition: ObservablePoint = js.native
 
-  val tileScale: PIXIObservablePoint = js.native
+  val tileScale: ObservablePoint = js.native
 
 }

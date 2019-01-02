@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.JSGlobal
  */
 @js.native
 @JSGlobal("PIXI.extras.BitmapText")
-final class PIXIBitmapText(var text: String, style: BitmapTextStyle) extends PIXIContainer with WithTint {
+final class BitmapText(var text: String, style: BitmapTextStyle) extends Container with WithTint {
 
   var align: String = js.native
 

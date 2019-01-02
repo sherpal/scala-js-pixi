@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.JSGlobal
  */
 @js.native
 @JSGlobal("PIXI.Point")
-final class PIXIPoint(var x: Double = 0, var y: Double = 0) extends js.Object {
+final class Point(var x: Double = 0, var y: Double = 0) extends js.Object {
 
   def set(x: Double, y: Double): Unit = js.native
 

@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.JSGlobal
  */
 @js.native
 @JSGlobal("PIXI.Text")
-final class PIXIText(t: String, var style: PIXITextStyle,
-                     canvas: html.Canvas = dom.document.createElement("canvas").asInstanceOf[html.Canvas])
- extends PIXISprite(js.native) {
+final class Text(t: String, var style: TextStyle = js.native,
+                 canvas: html.Canvas = dom.document.createElement("canvas").asInstanceOf[html.Canvas])
+ extends Sprite(js.native) {
 
 
   var text: String = js.native

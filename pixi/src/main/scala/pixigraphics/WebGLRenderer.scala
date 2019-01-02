@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.JSGlobal
  */
 @js.native
 @JSGlobal("PIXI.WebGLRenderer")
-final class WebGLRenderer(width: Int, height: Int, options: RendererOptions) extends PIXIRenderer
+final class WebGLRenderer(width: Int, height: Int, options: RendererOptions) extends Renderer
