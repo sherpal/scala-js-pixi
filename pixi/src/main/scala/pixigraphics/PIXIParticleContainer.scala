@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.JSGlobal
  */
 @js.native
 @JSGlobal("PIXI.particles.ParticleContainer")
-class PIXIParticleContainer(maxSize: Int = 15000,
+final class PIXIParticleContainer(maxSize: Int = 15000,
                             properties: ParticleContainerProperties = js.native,
                             batchSize: Int = 15000) extends PIXIContainer {
 

@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.JSGlobal
  */
 @js.native
 @JSGlobal("PIXI.CanvasRenderer")
-class CanvasRenderer(width: Int, height: Int, options: RendererOptions) extends PIXIRenderer
+final class CanvasRenderer(width: Int, height: Int, options: RendererOptions) extends PIXIRenderer

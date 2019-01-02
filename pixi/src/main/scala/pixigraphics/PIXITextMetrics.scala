@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
 @JSGlobal("PIXI.TextMetrics")
-class PIXITextMetrics(val text: String, val style: PIXITextStyle,
-                      val width: Double, val height: Double,
-                      val lines: js.Array[String], val lineWidths: js.Array[Double], // TODO: check type
-                      val lineHeight: Double, val maxLineWidth: Double,
-                      val fontProperties: js.Object) extends js.Object {
+final class PIXITextMetrics(val text: String, val style: PIXITextStyle,
+                            val width: Double, val height: Double,
+                            val lines: js.Array[String], val lineWidths: js.Array[Double], // TODO: check type
+                            val lineHeight: Double, val maxLineWidth: Double,
+                            val fontProperties: js.Object) extends js.Object {
 
 }
 

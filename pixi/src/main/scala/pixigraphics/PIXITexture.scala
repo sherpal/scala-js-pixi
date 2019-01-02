@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.JSGlobal
  */
 @js.native
 @JSGlobal("PIXI.Texture")
-class PIXITexture() extends js.Object {
+final class PIXITexture() extends js.Object {
 
   def update(): Unit = js.native
 
@@ -20,6 +20,8 @@ class PIXITexture() extends js.Object {
 @js.native
 @JSGlobal("PIXI.Texture")
 object PIXITexture extends js.Object {
+
+  def fromFrame(frameId: String): PIXITexture = js.native
 
   def fromImage(imageId: String): PIXITexture = js.native
 

@@ -1,11 +1,13 @@
 package pixi
 
-import basics.{Basics, Container}
+import basics._
 import pixigraphics.PIXIApplication
 
 trait PIXIExample {
 
   val name: String
+
+  val pixiUrl: String
 
   private var pixiApp: Option[PIXIApplication] = None
 
@@ -23,6 +25,7 @@ trait PIXIExample {
   def run(): Unit = {
     PIXIExample.stopAll()
     pixiApp = Some(newApplication())
+    ExampleSelector.changeCanvas(pixiApp.get.view, pixiUrl)
   }
 
 }
@@ -31,7 +34,11 @@ object PIXIExample {
 
   val allExamples: List[PIXIExample] = List(
     Basics,
-    Container
+    Container,
+    ContainerPivot,
+    SpriteSheetAnimation,
+    Click,
+    TilingSprite
   )
 
   def stopAll(): Unit =

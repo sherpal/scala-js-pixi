@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.JSGlobal
  */
 @js.native
 @JSGlobal("PIXI.TextStyle")
-class PIXITextStyle(style: PIXITextStyleStyle) extends js.Object {
+final class PIXITextStyle(style: PIXITextStyleStyle) extends js.Object {
 
   def fontSize: Int = js.native
 

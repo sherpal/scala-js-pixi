@@ -8,14 +8,18 @@ object ExampleSelector {
   private val canvasContainer: html.Div = dom.document.getElementById("canvas-container")
     .asInstanceOf[html.Div]
 
+  private val pixiUrlLink: html.Anchor = dom.document.getElementById("pixi-url")
+    .asInstanceOf[html.Anchor]
+
   /**
     * Removes the content of the canvas-container div, and puts a new html.Canvas into it.
     * @return
     */
-  def changeCanvas(canvas: html.Canvas): html.Canvas = {
+  def changeCanvas(canvas: html.Canvas, url: String): html.Canvas = {
     val children = canvasContainer.children
     for (idx <- 0 until children.length) canvasContainer.removeChild(children(idx))
 
+    pixiUrlLink.href = url
     canvasContainer.appendChild(canvas)
     canvas
   }

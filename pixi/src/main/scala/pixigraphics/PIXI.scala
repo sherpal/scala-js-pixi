@@ -1,5 +1,7 @@
 package pixigraphics
 
+import pixigraphics.pixisettings.PIXISettings
+
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSGlobal
 
@@ -15,5 +17,7 @@ object PIXI extends js.Object {
   val SCALE_MODES: js.Dynamic = js.native
 
   val BLEND_MODES: BlendModeChoices = js.native
+
+  val settings: PIXISettings = js.native
 
 }

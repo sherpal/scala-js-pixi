@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.JSGlobal
  */
 @js.native
 @JSGlobal("PIXI.loaders.Loader")
-class PIXILoader extends js.Object {
+final class PIXILoader extends js.Object {
 
   val resources: js.Dictionary[PIXIResource] = js.native
 

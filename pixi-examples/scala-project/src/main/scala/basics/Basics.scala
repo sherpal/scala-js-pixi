@@ -1,6 +1,6 @@
 package basics
 
-import pixi.{ExampleSelector, PIXIExample}
+import pixi.PIXIExample
 import pixigraphics.{PIXIApplication, PIXIApplicationOptions, PIXISprite}
 
 import scala.scalajs.js
@@ -9,11 +9,12 @@ object Basics extends PIXIExample {
 
   val name: String = "Basics"
 
+  val pixiUrl: String = "https://pixijs.io/examples/#/basics/basic.js"
+
   def newApplication(): PIXIApplication = {
     val app = new PIXIApplication(new PIXIApplicationOptions {
       override val backgroundColor: js.UndefOr[Int] = 0x1099bb
     })
-    ExampleSelector.changeCanvas(app.view)
 
     // create a new Sprite from an image path
     val bunny = PIXISprite.fromImage("required/assets/basics/bunny.png")

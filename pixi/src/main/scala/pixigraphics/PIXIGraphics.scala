@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.JSGlobal
  */
 @js.native
 @JSGlobal("PIXI.Graphics")
-class PIXIGraphics() extends PIXIContainer {
+final class PIXIGraphics() extends PIXIContainer {
 
   def arc(x: Double, y: Double, radius: Int,
           startAngle: Double, endingAngle: Double, antiClockwise: Boolean = false): PIXIGraphics = js.native

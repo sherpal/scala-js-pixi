@@ -12,6 +12,8 @@ abstract class DisplayObject extends EventEmitter {
 
   var alpha: Double = js.native
 
+  var buttonMode: Boolean = js.native
+
   var dirty: Boolean = js.native
 
   var filters: js.Array[PIXIFilter] = js.native
