@@ -34,7 +34,10 @@ You will find the translation of (most of) these
 examples in the `pixi-examples` part of the project.
 
 
-In order to run it, open up a server in the root
+In order to run it, you first need to download
+all the assets
+[here](https://github.com/pixijs/examples/tree/gh-pages/required).
+Then, open a server in the root
 directory, and head over
 `localhost:[port]/pixi-examples/html`.
 You can then select the example you want to see
@@ -44,8 +47,7 @@ the JavaScript code to the Scala code goes along
 the lines:
 
 - copy-paste the JavaScript code
-- change PIXI.SomeClass to PIXISomeClass
-(will probably change to just ChangeClass)
+- change PIXI.SomeClass to SomeClass
 - changing `var` to `val`
 - removing the semi-colon at end of lines
 - changing `for` loops into for comprehensions
