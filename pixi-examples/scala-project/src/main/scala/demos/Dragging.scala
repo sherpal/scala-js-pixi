@@ -26,11 +26,11 @@ object Dragging extends PIXIExample {
 
     final class Bunny(x: Double, y: Double) {
 
-      var data: InteractionData = _
+      private var data: InteractionData = _
 
-      var dragging = false
+      private var dragging = false
 
-      val bunny: Sprite = new Sprite(texture)
+      private val bunny: Sprite = new Sprite(texture)
 
       // enable the bunny to be interactive... this will allow it to respond to mouse and touch events
       bunny.interactive = true
