@@ -2,6 +2,7 @@ package basics
 
 import pixi.PIXIExample
 import pixigraphics._
+import pixigraphics.options.ApplicationOptions
 
 import scala.scalajs.js
 

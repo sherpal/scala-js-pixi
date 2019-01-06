@@ -1,7 +1,8 @@
 package basics
 
 import pixi.PIXIExample
-import pixigraphics.{Application, ApplicationOptions, Graphics => PIXIGraphics}
+import pixigraphics.options.ApplicationOptions
+import pixigraphics.{Application, Graphics => PIXIGraphics}
 
 import scala.scalajs.js.UndefOr
 

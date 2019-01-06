@@ -36,7 +36,10 @@ examples in the `pixi-examples` part of the project.
 
 In order to run it, you first need to download
 all the assets
-[here](https://github.com/pixijs/examples/tree/gh-pages/required).
+[here](https://github.com/pixijs/examples/tree/gh-pages/required)
+and put them in
+`pixi-examples/html/required`.
+
 Then, open a server in the root
 directory, and head over
 `localhost:[port]/pixi-examples/html`.
@@ -52,7 +55,7 @@ the lines:
 - removing the semi-colon at end of lines
 - changing `for` loops into for comprehensions
 
-Adding the canvas to the DOM is made automatically
+Adding the canvas to the DOM is done automatically
 in
 `PIXIExample`.
 
@@ -63,3 +66,6 @@ in
 classes, since there're already convenient as is.
 The major drawback is that `js.Array` can't be
 Scala collections.
+- Some examples have slightly been adapted to better
+correspond to a "Scala way of doing". See, e.g., the
+`demos/Draggin` example.

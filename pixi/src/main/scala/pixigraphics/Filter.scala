@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
 @JSGlobal("PIXI.Filter")
-class Filter(vertexSrc: String, fragmentSrc: String, uniforms: js.Object)
+class Filter(vertexSrc: String, fragmentSrc: String, val uniforms: js.Object = js.native)
   extends Shader(js.native, js.native, js.native) {
 
 }

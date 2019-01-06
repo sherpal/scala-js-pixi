@@ -1,5 +1,7 @@
 package pixigraphics
 
+import pixigraphics.options.RendererOptions
+
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSGlobal
 

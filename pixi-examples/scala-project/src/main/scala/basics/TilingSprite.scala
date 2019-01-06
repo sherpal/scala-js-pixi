@@ -2,7 +2,8 @@ package basics
 
 import pixi.PIXIExample
 import pixigraphics.extras.{TilingSprite => TilingSpriteClass}
-import pixigraphics.{Application, ApplicationOptions, Texture}
+import pixigraphics.options.ApplicationOptions
+import pixigraphics.{Application, Texture}
 
 object TilingSprite extends PIXIExample {
 

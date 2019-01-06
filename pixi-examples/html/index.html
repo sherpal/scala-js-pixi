@@ -3,12 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Pixi Scala Example</title>
+
+    <style>
+        #menu {
+            position: fixed;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            background-color: #000099;
+            color: white;
+            width: 200px;
+            padding: 10px;
+        }
+
+        .menu-section {
+            border-bottom: 1px solid white;
+            margin-bottom: 10px;
+        }
+
+        .section-header {
+            font-weight: bold;
+            font-size: 16;
+        }
+
+        .example-option {
+            padding: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 
-<select id="selector"></select>
-<a id="pixi-url" href="#" target="_blank">See PIXI JavaScript example</a>
-<div id="canvas-container"></div>
+<div id="menu">
+
+</div>
+
+<div style="margin-left: 250px">
+    <a id="pixi-url" href="#" style="display: none" target="_blank">See PIXI JavaScript example</a>
+    <div id="canvas-container"></div>
+</div>
 
 </body>
 

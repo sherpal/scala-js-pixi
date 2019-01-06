@@ -1,7 +1,8 @@
 package basics
 
 import pixi.PIXIExample
-import pixigraphics.{PIXI, Application, ApplicationOptions, Sprite}
+import pixigraphics.options.ApplicationOptions
+import pixigraphics.{Application, PIXI, Sprite}
 
 import scala.scalajs.js
 

@@ -15,6 +15,9 @@ final class Graphics() extends Container {
 
   def beginFill(color: Int, alpha: Double = 1.0): Graphics = js.native
 
+  def bezierCurveTo(cpX: Double, cpY: Double, cpX2: Double, cpY2: Double, toX: Double, toY: Double): Graphics =
+    js.native
+
   def clear(): Graphics = js.native
 
   def closePath(): Graphics = js.native
@@ -36,5 +39,7 @@ final class Graphics() extends Container {
   def lineTo(x: Double, y: Double): Graphics = js.native
 
   def moveTo(x: Double, y: Double): Graphics = js.native
+
+  def quadraticCurveTo(cpX: Double, cpY: Double, toX: Double, toY: Double): Graphics = js.native
 
 }

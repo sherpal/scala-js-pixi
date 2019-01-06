@@ -1,6 +1,7 @@
 package pixigraphics
 
 import org.scalajs.dom.html
+import pixigraphics.utils.EventEmitter
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSGlobal

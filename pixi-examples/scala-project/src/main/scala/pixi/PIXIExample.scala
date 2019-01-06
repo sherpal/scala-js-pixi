@@ -1,6 +1,7 @@
 package pixi
 
 import basics._
+import demos._
 import pixigraphics.Application
 
 trait PIXIExample {
@@ -14,7 +15,7 @@ trait PIXIExample {
   private def stop(): Unit = {
     pixiApp match {
       case Some(app) =>
-        app.destroy(removeView = true)
+        app.destroy(removeView = true, stageOptions = true)
       case None =>
     }
     pixiApp = None
@@ -32,20 +33,33 @@ trait PIXIExample {
 
 object PIXIExample {
 
-  val allExamples: List[PIXIExample] = List(
-    Basics,
-    Container,
-    ContainerPivot,
-    SpriteSheetAnimation,
-    Click,
-    TilingSprite,
-    Text,
-    Graphics,
-    Video,
-    RenderTexture
+  val allExamples: Map[String, List[PIXIExample]] = Map(
+    "Basics" -> List(
+      Basics,
+      Container,
+      ContainerPivot,
+      SpriteSheetAnimation,
+      Click,
+      TilingSprite,
+      Text,
+      Graphics,
+      Video,
+      RenderTexture,
+      CustomFilter
+    ),
+    "Demos" -> List(
+      AnimatedSprite,
+      AnimationSpeed,
+      Interactivity,
+      TransparentBackground,
+      Dragging,
+      DemoRenderTexture,
+      DemoGraphics,
+      Masking
+    )
   )
 
   def stopAll(): Unit =
-    allExamples.foreach(_.stop())
+    allExamples.values.flatten.foreach(_.stop())
 
 }

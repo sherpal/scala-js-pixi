@@ -19,7 +19,9 @@ trait Renderer extends js.Object {
 
   def generateTexture(displayObject: DisplayObject): Texture = js.native
 
-  def render(stage: DisplayObject, renderTexture: RenderTexture): Unit = js.native
+  def render(stage: DisplayObject, renderTexture: RenderTexture,
+             clear: Boolean = js.native, transform: Matrix = js.native,
+             skipUpdateTransform: Boolean = js.native): Unit = js.native
 
   // example:
   //     renderer.autoResize = true

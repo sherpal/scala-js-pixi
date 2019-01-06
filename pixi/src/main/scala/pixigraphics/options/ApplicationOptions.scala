@@ -1,4 +1,4 @@
-package pixigraphics
+package pixigraphics.options
 
 import scala.scalajs.js
 

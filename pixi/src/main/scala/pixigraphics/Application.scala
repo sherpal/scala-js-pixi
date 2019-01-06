@@ -1,13 +1,15 @@
 package pixigraphics
 
 import org.scalajs.dom.html
+import pixigraphics.options.{ApplicationOptions, StageOptions}
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSGlobal
+import scala.scalajs.js.|
 
 @JSGlobal("PIXI.Application")
 @js.native
-final class Application(options: ApplicationOptions) extends js.Object {
+final class Application(options: ApplicationOptions = js.native) extends js.Object {
 
   val renderer: WebGLRenderer = js.native
 
@@ -19,6 +21,11 @@ final class Application(options: ApplicationOptions) extends js.Object {
 
   val view: html.Canvas = js.native
 
-  def destroy(removeView: Boolean = false): Unit = js.native
+  def destroy(removeView: Boolean = false,
+              stageOptions: StageOptions | Boolean = false): Unit = js.native
+
+  def start(): Unit = js.native
+
+  def stop(): Unit = js.native
 
 }

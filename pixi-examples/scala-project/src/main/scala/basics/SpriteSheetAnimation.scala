@@ -3,6 +3,7 @@ package basics
 import pixi.PIXIExample
 import pixigraphics._
 import pixigraphics.extras.AnimatedSprite
+import pixigraphics.options.ApplicationOptions
 
 import scala.scalajs.js.Dictionary
 import scala.scalajs.js.JSConverters._
