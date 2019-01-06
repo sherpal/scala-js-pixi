@@ -26,9 +26,9 @@ object Dragging extends PIXIExample {
 
     final class Bunny(x: Double, y: Double) {
 
-      private var data: InteractionData = _
+      private var data: Option[InteractionData] = None
 
-      private var dragging = false
+      private def dragging: Boolean = data.isDefined
 
       private val bunny: Sprite = new Sprite(texture)
 
@@ -75,21 +75,19 @@ object Dragging extends PIXIExample {
         // store a reference to the data
         // the reason for this is because of multitouch
         // we want to track the movement of this particular touch
-        data = event.data
+        data = Some(event.data)
         bunny.alpha = 0.5
-        dragging = true
       }
 
       def onDragEnd(): Unit = {
         bunny.alpha = 1
-        dragging = false
         // set the interaction data to null
-        data = null
+        data = None
       }
 
       def onDragMove(): Unit = {
         if (dragging) {
-          val newPosition = this.data.getLocalPosition(bunny.parent)
+          val newPosition = data.get.getLocalPosition(bunny.parent)
           bunny.x = newPosition.x
           bunny.y = newPosition.y
         }

@@ -55,7 +55,12 @@ object PIXIExample {
       Dragging,
       DemoRenderTexture,
       DemoGraphics,
-      Masking
+      Masking,
+      MaskingRenderTexture,
+      BlendModes,
+      Tinting,
+      ParticleContainer,
+      Strip
     )
   )
 

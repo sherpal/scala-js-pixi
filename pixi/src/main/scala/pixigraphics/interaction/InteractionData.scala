@@ -10,6 +10,8 @@ import scala.scalajs.js
 @js.native
 trait InteractionData extends js.Object {
 
+  val global: Point = js.native
+
   def getLocalPosition(displayObject: DisplayObject, point: Point = js.native, globalPos: Point = js.native): Point =
     js.native
 

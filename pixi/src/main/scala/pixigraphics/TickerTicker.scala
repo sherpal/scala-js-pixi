@@ -10,6 +10,10 @@ import scala.scalajs.js.annotation.JSGlobal
 @js.native
 final class TickerTicker() extends js.Object {
 
+  var elapsedMS: Double = js.native
+
+  def FPS: Double = js.native
+
   def add(fn: js.Function): Unit = js.native
 
 }
