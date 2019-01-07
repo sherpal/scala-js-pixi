@@ -11,7 +11,14 @@ import scala.scalajs.js.|
  */
 @js.native
 @JSGlobal("PIXI.Texture")
-class Texture(val baseTexture: BaseTexture) extends js.Object {
+class Texture(
+               val baseTexture: BaseTexture,
+               val frame: Rectangle = js.native,
+               val orig: Rectangle = js.native,
+               val trim: Rectangle = js.native,
+               var rotate: Double = js.native,
+               val anchor: Point = js.native
+             ) extends js.Object {
 
   def update(): Unit = js.native
 

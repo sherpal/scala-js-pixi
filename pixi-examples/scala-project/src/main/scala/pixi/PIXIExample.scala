@@ -60,7 +60,10 @@ object PIXIExample {
       BlendModes,
       Tinting,
       ParticleContainer,
-      Strip
+      Strip,
+      TextureSwap,
+      TextureRotate,
+      AlphaMask
     )
   )
 

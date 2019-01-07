@@ -72,7 +72,7 @@ object Masking extends PIXIExample {
 
     val help = new Text("Click or tap to turn masking on / off.", new TextStyle(new TextStyleStyle {
       override val fontFamily: js.UndefOr[String] = "Arial"
-      override val fontSize: js.UndefOr[Int] = 12
+      override val fontSize: js.UndefOr[String | Int] = 12
       override val fontWeight: js.UndefOr[String] = "bold"
       override val fill: js.UndefOr[String | js.Array[String]] = "white"
     }))

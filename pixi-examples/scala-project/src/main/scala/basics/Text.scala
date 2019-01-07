@@ -26,7 +26,7 @@ object Text extends PIXIExample {
 
     val style = new TextStyle(new TextStyleStyle {
       override val fontFamily: js.UndefOr[String] = "Arial"
-      override val fontSize: js.UndefOr[Int] = 36
+      override val fontSize: js.UndefOr[String | Int] = 36
       override val fontStyle: js.UndefOr[String] = "italic"
       override val fontWeight: js.UndefOr[String] = "bold"
       override val fill: js.UndefOr[String | js.Array[String]] = js.Array("#ffffff", "#00ff99") // gradient

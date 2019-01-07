@@ -8,6 +8,8 @@ import scala.scalajs.js.|
  */
 trait TextStyleStyle extends js.Object {
 
+  val align: js.UndefOr[String] = js.undefined
+
   val dropShadow: js.UndefOr[Boolean] = js.undefined
 
   val dropShadowAngle: js.UndefOr[Double] = js.undefined
@@ -22,7 +24,7 @@ trait TextStyleStyle extends js.Object {
 
   val fontFamily: js.UndefOr[String] = js.undefined
 
-  val fontSize: js.UndefOr[Int] = js.undefined
+  val fontSize: js.UndefOr[String | Int] = js.undefined
 
   val fontStyle: js.UndefOr[String] = js.undefined
 
