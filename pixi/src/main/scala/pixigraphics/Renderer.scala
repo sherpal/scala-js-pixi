@@ -1,6 +1,7 @@
 package pixigraphics
 
 import org.scalajs.dom.html
+import pixigraphics.objects.Plugins
 
 import scala.scalajs.js
 
@@ -10,12 +11,14 @@ import scala.scalajs.js
 @js.native
 trait Renderer extends js.Object {
 
-  val view: html.Canvas = js.native
-
   var autoResize: Boolean = js.native
 
   // example: renderer.backgroundColor = 0xFF0000
   var backgroundColor: Int = js.native
+
+  val plugins: Plugins = js.native
+
+  val view: html.Canvas = js.native
 
   def generateTexture(displayObject: DisplayObject): Texture = js.native
 

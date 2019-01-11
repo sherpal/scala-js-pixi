@@ -9,4 +9,6 @@ import scala.scalajs.js.annotation.JSGlobal
 @JSGlobal("PIXI.Mesh")
 class Mesh extends Container {
 
+  var blendMode: Int = js.native
+
 }

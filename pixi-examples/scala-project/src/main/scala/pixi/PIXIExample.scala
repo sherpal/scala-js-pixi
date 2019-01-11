@@ -63,7 +63,8 @@ object PIXIExample {
       Strip,
       TextureSwap,
       TextureRotate,
-      AlphaMask
+      AlphaMask,
+      MouseTrail
     )
   )
 
