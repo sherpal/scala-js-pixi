@@ -18,6 +18,8 @@ trait Renderer extends js.Object {
 
   val plugins: Plugins = js.native
 
+  val screen: Rectangle = js.native
+
   val view: html.Canvas = js.native
 
   def generateTexture(displayObject: DisplayObject): Texture = js.native

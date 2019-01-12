@@ -64,7 +64,9 @@ object PIXIExample {
       TextureSwap,
       TextureRotate,
       AlphaMask,
-      MouseTrail
+      MouseTrail,
+      CustomMouseIcon,
+      StarWarp
     )
   )
 

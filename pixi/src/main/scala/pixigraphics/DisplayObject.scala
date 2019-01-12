@@ -17,6 +17,8 @@ abstract class DisplayObject extends EventEmitter {
 
   final var buttonMode: Boolean = js.native
 
+  final var cursor: String = js.native
+
   final var dirty: Boolean = js.native
 
   final var filters: js.Array[Filter] = js.native
