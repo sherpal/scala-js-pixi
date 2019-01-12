@@ -2,6 +2,7 @@ package pixi
 
 import basics._
 import demos._
+import filters._
 import pixigraphics.Application
 
 trait PIXIExample {
@@ -67,6 +68,12 @@ object PIXIExample {
       MouseTrail,
       CustomMouseIcon,
       StarWarp
+    ),
+    "Filters" -> List(
+      Filter,
+      MouseBlending,
+      Blur,
+      Outline
     )
   )
 

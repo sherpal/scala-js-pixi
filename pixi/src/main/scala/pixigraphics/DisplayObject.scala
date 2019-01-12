@@ -21,6 +21,8 @@ abstract class DisplayObject extends EventEmitter {
 
   final var dirty: Boolean = js.native
 
+  final var filterArea: Rectangle = js.native
+
   final var filters: js.Array[Filter] = js.native
 
   final var interactive: Boolean = js.native

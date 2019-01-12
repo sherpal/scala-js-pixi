@@ -1,4 +1,6 @@
-package pixigraphics
+package pixigraphics.filters
+
+import pixigraphics.Filter
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSGlobal
