@@ -30,12 +30,10 @@ object ExampleSelector {
       // checking if the page is still the same when we receive the response
       if (titleH1.textContent == example.name & request.readyState == 4 & request.status == 200) {
         val code = request.responseText
-
         val q = '"'
 
         codeDiv.innerHTML = s"<pre><code class=${q}scala hljs$q>$code</code></pre>"
-        setTimeout(1000) {
-          println("coucou")
+        setTimeout(1) {
           dom.window.asInstanceOf[js.Dynamic].hljs.highlightBlock(codeDiv.firstChild.firstChild)
         }
       }

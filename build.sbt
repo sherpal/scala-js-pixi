@@ -36,7 +36,7 @@ lazy val `pixi-facade` = project.in(file("pixi"))
       </developer>
     </developers>,
   pomIncludeRepository := { _ => false },
-
+  credentials += Credentials(Path.userHome / ".sbt" / ".credentials")
 )
 
 lazy val `examples` = project.in(file("pixi-examples/scala-project"))
