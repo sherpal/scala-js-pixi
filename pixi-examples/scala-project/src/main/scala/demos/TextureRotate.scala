@@ -6,7 +6,7 @@ import pixigraphics._
 import scala.scalajs.js
 import scala.scalajs.js.|
 
-object TextureRotate extends PIXIExample {
+case object TextureRotate extends PIXIExample {
 
   val name: String = "Texture Rotate"
 

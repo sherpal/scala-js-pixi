@@ -3,7 +3,7 @@ package demos
 import pixi.PIXIExample
 import pixigraphics.{Application, Rectangle, Sprite}
 
-object Tinting extends PIXIExample {
+case object Tinting extends PIXIExample {
 
   val name: String = "Tinting"
 

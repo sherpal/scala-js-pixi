@@ -3,7 +3,7 @@ package demos
 import pixigraphics.{Application, Container, RenderTexture, Sprite}
 import pixi.PIXIExample
 
-object DemoRenderTexture extends PIXIExample {
+case object DemoRenderTexture extends PIXIExample {
 
   val name: String = "Render Texture"
 

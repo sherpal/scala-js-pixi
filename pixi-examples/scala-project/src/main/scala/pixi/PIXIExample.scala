@@ -3,6 +3,7 @@ package pixi
 import basics._
 import demos._
 import filters._
+import org.scalajs.dom.html
 import pixigraphics.Application
 
 trait PIXIExample {
@@ -10,6 +11,8 @@ trait PIXIExample {
   val name: String
 
   val pixiUrl: String
+
+  def githubUrl(pkg: String): String = s"https://raw.githubusercontent.com/sherpal/scala-js-pixi/master/pixi-examples/scala-project/src/main/scala/$pkg/$toString.scala"
 
   private var pixiApp: Option[Application] = None
 
@@ -24,11 +27,14 @@ trait PIXIExample {
 
   protected def newApplication(): Application
 
-  def run(): Unit = {
+  def run(pkg: String): Unit = {
     PIXIExample.stopAll()
     pixiApp = Some(newApplication())
-    ExampleSelector.changeCanvas(pixiApp.get.view, pixiUrl)
+    ExampleSelector.changeCanvas(this)
+    ExampleSelector.loadAndDisplayCode(this, pkg)
   }
+
+  def canvas: html.Canvas = pixiApp.get.view
 
 }
 

@@ -8,7 +8,7 @@ import pixigraphics.options.ApplicationOptions
 import scala.scalajs.js.Dictionary
 import scala.scalajs.js.JSConverters._
 
-object SpriteSheetAnimation extends PIXIExample {
+case object SpriteSheetAnimation extends PIXIExample {
 
   val name: String = "SpriteSheet Animation"
 

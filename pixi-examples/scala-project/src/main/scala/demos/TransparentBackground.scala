@@ -6,7 +6,7 @@ import pixigraphics.{Application, Sprite}
 
 import scala.scalajs.js.UndefOr
 
-object TransparentBackground extends PIXIExample {
+case object TransparentBackground extends PIXIExample {
 
   val name: String = "Transparent Background"
 

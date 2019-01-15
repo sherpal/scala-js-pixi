@@ -3,7 +3,7 @@ package demos
 import pixi.PIXIExample
 import pixigraphics.{Application, Point, Sprite}
 
-object AlphaMask extends PIXIExample {
+case object AlphaMask extends PIXIExample {
 
   val name: String = "Alpha Mask"
 

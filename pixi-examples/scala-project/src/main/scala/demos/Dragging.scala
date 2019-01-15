@@ -7,7 +7,7 @@ import pixigraphics.options.ApplicationOptions
 
 import scala.scalajs.js.UndefOr
 
-object Dragging extends PIXIExample {
+case object Dragging extends PIXIExample {
 
   val name: String = "Dragging"
 

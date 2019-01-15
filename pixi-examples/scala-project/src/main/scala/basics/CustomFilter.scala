@@ -5,7 +5,7 @@ import pixigraphics._
 
 import scala.scalajs.js
 
-object CustomFilter extends PIXIExample {
+case object CustomFilter extends PIXIExample {
 
   val name: String = "Custom Filter"
 

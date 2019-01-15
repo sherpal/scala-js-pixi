@@ -5,7 +5,7 @@ import pixigraphics.extras.{TilingSprite => TilingSpriteClass}
 import pixigraphics.options.ApplicationOptions
 import pixigraphics.{Application, Texture}
 
-object TilingSprite extends PIXIExample {
+case object TilingSprite extends PIXIExample {
 
   val name: String = "Tiling Sprite"
 

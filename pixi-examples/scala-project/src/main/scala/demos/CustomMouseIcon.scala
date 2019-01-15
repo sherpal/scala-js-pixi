@@ -6,7 +6,7 @@ import pixigraphics.options.ApplicationOptions
 
 import scala.scalajs.js.UndefOr
 
-object CustomMouseIcon extends PIXIExample {
+case object CustomMouseIcon extends PIXIExample {
 
   val name: String = "Custom mouse icon"
 

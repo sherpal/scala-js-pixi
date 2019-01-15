@@ -6,7 +6,7 @@ import pixigraphics.{Application, Graphics => PIXIGraphics}
 
 import scala.scalajs.js.UndefOr
 
-object Graphics extends PIXIExample {
+case object Graphics extends PIXIExample {
 
   val name: String = "Graphics"
 

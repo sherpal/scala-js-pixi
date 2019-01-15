@@ -10,9 +10,15 @@ lazy val `pixi-facade` = project.in(file("pixi"))
 .enablePlugins(ScalaJSPlugin)
 .settings(
   name := "scala-js-pixi",
+  homepage := Some(url("https://github.com/sherpal/scala-js-pixi")),
+  licenses += ("MIT", url("https://github.com/sherpal/scala-js-pixi/blob/master/LICENSE")),
   libraryDependencies ++= Seq(
     "org.scala-js" %%% "scalajs-dom" % "0.9.6"
   ),
+  scmInfo := Some(ScmInfo(
+    url("https://github.com/sherpal/scala-js-pixi"),
+    "scm:git:git@github.com:sherpal/scala-js-pixi.git"
+  )),
   publishMavenStyle := true,
   publishTo := {
     val nexus = "https://oss.sonatype.org/"

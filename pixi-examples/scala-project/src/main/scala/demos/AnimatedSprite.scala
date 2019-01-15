@@ -6,7 +6,7 @@ import pixigraphics.{Application, PIXI, Texture}
 
 import scala.scalajs.js.JSConverters._
 
-object AnimatedSprite extends PIXIExample {
+case object AnimatedSprite extends PIXIExample {
 
   val name: String = "AnimatedSprite"
 

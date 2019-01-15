@@ -6,7 +6,7 @@ import pixigraphics.{Application, ParticleContainerProperties, Rectangle, Sprite
 import scala.scalajs.js
 import scala.scalajs.js.|
 
-object ParticleContainer extends PIXIExample {
+case object ParticleContainer extends PIXIExample {
 
   val name: String = "Particle Container"
 

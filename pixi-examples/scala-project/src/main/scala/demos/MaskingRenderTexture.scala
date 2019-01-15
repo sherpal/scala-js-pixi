@@ -6,7 +6,7 @@ import pixigraphics.interaction.InteractionEvent
 
 import scala.scalajs.js
 
-object MaskingRenderTexture extends PIXIExample {
+case object MaskingRenderTexture extends PIXIExample {
 
   val name: String = "Masking + renderTexture"
 

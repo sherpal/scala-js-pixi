@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Pixi Scala Example</title>
 
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
+    <link rel="stylesheet" href="./a11y-light.css">
+    <script src="./highlight.pack.js"></script>
+
     <style>
         #menu {
             position: fixed;
@@ -31,6 +36,10 @@
             padding: 5px;
             cursor: pointer;
         }
+
+        pre code {
+            border: 1px solid black;
+        }
     </style>
 </head>
 <body>
@@ -39,9 +48,12 @@
 
 </div>
 
-<div style="margin-left: 250px">
-    <a id="pixi-url" href="#" style="display: none" target="_blank">See PIXI JavaScript example</a>
+<div id="overall-container" style="margin-left: 250px; display: none">
+    <h1 id="title"></h1>
     <div id="canvas-container"></div>
+    <h2>Source code</h2>
+    <div id="code-container"></div>
+    <a id="pixi-url" href="#" target="_blank">See PIXI JavaScript example</a>
 </div>
 
 </body>
@@ -49,5 +61,6 @@
 <script type="text/javascript" src="https://pixijs.download/release/pixi.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pixi-filters@2.6.1/dist/pixi-filters.js"></script>
 <script type="text/javascript" src="../scala-project/target/scala-2.12/examples-fastopt.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
 
 </html>

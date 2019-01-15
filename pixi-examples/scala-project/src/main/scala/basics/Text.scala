@@ -7,7 +7,7 @@ import pixigraphics.options.ApplicationOptions
 import scala.scalajs.js
 import scala.scalajs.js.|
 
-object Text extends PIXIExample {
+case object Text extends PIXIExample {
 
   val name: String = "Text"
 

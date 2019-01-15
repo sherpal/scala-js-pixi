@@ -5,7 +5,7 @@ import pixigraphics.{Application, Container, Filter => PIXIFilter, Sprite}
 
 import scala.scalajs.js
 
-object MouseBlending extends PIXIExample {
+case object MouseBlending extends PIXIExample {
 
   val name: String = "Mouse blending"
 

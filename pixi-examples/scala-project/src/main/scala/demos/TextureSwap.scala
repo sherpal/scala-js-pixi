@@ -3,7 +3,7 @@ package demos
 import pixi.PIXIExample
 import pixigraphics.{Application, Sprite, Texture}
 
-object TextureSwap extends PIXIExample {
+case object TextureSwap extends PIXIExample {
 
   val name: String = "Texture Swap"
 

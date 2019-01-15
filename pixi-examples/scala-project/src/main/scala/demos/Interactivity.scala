@@ -5,7 +5,7 @@ import pixigraphics.{Application, Sprite, Texture}
 
 import scala.scalajs.js
 
-object Interactivity extends PIXIExample {
+case object Interactivity extends PIXIExample {
 
   val name: String = "Interactivity"
 

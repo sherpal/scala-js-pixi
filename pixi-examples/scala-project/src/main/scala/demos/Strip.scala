@@ -6,7 +6,7 @@ import pixigraphics.{Application, Container, Point, Texture}
 
 import scala.scalajs.js.JSConverters._
 
-object Strip extends PIXIExample {
+case object Strip extends PIXIExample {
 
   val name: String = "Strip"
 

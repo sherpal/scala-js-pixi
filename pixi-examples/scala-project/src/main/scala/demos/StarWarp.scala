@@ -7,7 +7,7 @@ import pixigraphics.options.ApplicationOptions
 import scala.scalajs.js.timers.setInterval
 import scala.scalajs.js.UndefOr
 
-object StarWarp extends PIXIExample {
+case object StarWarp extends PIXIExample {
 
   val name: String = "Star warp"
 

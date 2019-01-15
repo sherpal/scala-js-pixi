@@ -8,7 +8,7 @@ import pixigraphics.options.ApplicationOptions
 import scala.scalajs.js
 import scala.scalajs.js.{UndefOr, |}
 
-object Masking extends PIXIExample {
+case object Masking extends PIXIExample {
 
   val name: String = "Masking"
 

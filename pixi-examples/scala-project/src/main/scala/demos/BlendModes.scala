@@ -3,7 +3,7 @@ package demos
 import pixi.PIXIExample
 import pixigraphics.{Application, PIXI, Rectangle, Sprite}
 
-object BlendModes extends PIXIExample {
+case object BlendModes extends PIXIExample {
 
   val name: String = "BlendModes"
 

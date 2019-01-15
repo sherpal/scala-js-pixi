@@ -6,7 +6,7 @@ import pixigraphics.{Application, Sprite}
 
 import scala.scalajs.js
 
-object Outline extends PIXIExample {
+case object Outline extends PIXIExample {
 
   val name: String = "Outline"
 

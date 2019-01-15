@@ -9,7 +9,7 @@ import scala.collection.mutable
 import scala.scalajs.js.UndefOr
 import scala.scalajs.js.JSConverters._
 
-object MouseTrail extends PIXIExample {
+case object MouseTrail extends PIXIExample {
 
   val name: String = "Mouse trail"
 

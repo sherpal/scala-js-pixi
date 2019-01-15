@@ -6,7 +6,7 @@ import pixigraphics.{Application, Sprite}
 
 import scala.scalajs.js
 
-object Blur extends PIXIExample {
+case object Blur extends PIXIExample {
 
   val name: String = "Blur"
 

@@ -8,7 +8,7 @@ import pixigraphics.objects.FrameObject
 import scala.scalajs.js
 import scala.scalajs.js.JSConverters._
 
-object AnimationSpeed extends PIXIExample {
+case object AnimationSpeed extends PIXIExample {
 
   val name: String = "AnimationSpeed"
 

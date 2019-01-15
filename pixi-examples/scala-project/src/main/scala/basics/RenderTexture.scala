@@ -6,7 +6,7 @@ import pixigraphics.options.ApplicationOptions
 
 import scala.scalajs.js
 
-object RenderTexture extends PIXIExample {
+case object RenderTexture extends PIXIExample {
 
   val name: String = "Render Texture"
 
