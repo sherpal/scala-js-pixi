@@ -8,6 +8,7 @@ organization := "be.doeraene"
 
 lazy val `pixi-facade` = project.in(file("pixi"))
 .enablePlugins(ScalaJSPlugin)
+.enablePlugins(Sonatype).enablePlugins(SbtPgp).enablePlugins(DynVerPlugin)
 .settings(
   name := "scala-js-pixi",
   homepage := Some(url("https://github.com/sherpal/scala-js-pixi")),
@@ -20,13 +21,9 @@ lazy val `pixi-facade` = project.in(file("pixi"))
     "scm:git:git@github.com:sherpal/scala-js-pixi.git"
   )),
   publishMavenStyle := true,
-  publishTo := {
-    val nexus = "https://oss.sonatype.org/"
-    if (isSnapshot.value)
-      Some("snapshots" at nexus + "content/repositories/snapshots")
-    else
-      Some("releases" at nexus + "service/local/staging/deploy/maven2")
-  },
+  publishTo := sonatypePublishTo.value,
+  description := "A Scala.js facade for PixiJS",
+  developers := List(Developer("sherpal", "Antoine Doeraene", "antoine.doerane@gmail.com", url("https://github.com/sherpal"))),
   pomExtra :=
     <developers>
       <developer>
@@ -35,8 +32,7 @@ lazy val `pixi-facade` = project.in(file("pixi"))
         <url>https://github.com/sherpal</url>
       </developer>
     </developers>,
-  pomIncludeRepository := { _ => false },
-  credentials += Credentials(Path.userHome / ".sbt" / ".credentials")
+  pomIncludeRepository := { _ => false }
 )
 
 lazy val `examples` = project.in(file("pixi-examples/scala-project"))
