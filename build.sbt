@@ -1,7 +1,5 @@
 name := "scala-js-pixi"
 
-version := "0.1.0"
-
 scalaVersion := "2.12.8"
 
 organization := "be.doeraene"
@@ -32,7 +30,8 @@ lazy val `pixi-facade` = project.in(file("pixi"))
         <url>https://github.com/sherpal</url>
       </developer>
     </developers>,
-  pomIncludeRepository := { _ => false }
+  pomIncludeRepository := { _ => false },
+  credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credential")
 )
 
 lazy val `examples` = project.in(file("pixi-examples/scala-project"))
